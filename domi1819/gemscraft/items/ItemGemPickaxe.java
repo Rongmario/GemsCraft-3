@@ -23,7 +23,7 @@ public class ItemGemPickaxe extends ItemPickaxe
         {
         	ItemStack output = null;
         	
-            if (itemStack.getItemDamage() < 2116)
+            if (itemStack.getItemDamage() < 2200)
             {
             	int block = world.getBlockId(x, y, z);
             	

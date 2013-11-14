@@ -17,7 +17,7 @@ public class ItemGemSword extends ItemSword
         //Black Diamond sword
         if (itemstack.itemID == GCProperties.blackDiamondToolsBaseID + 3)
         {
-            if (itemstack.getItemDamage() < 2116)
+            if (itemstack.getItemDamage() < 2200)
             {
                 entity.setFire(12);
                 itemstack.setItemDamage(itemstack.getItemDamage() + 5);
