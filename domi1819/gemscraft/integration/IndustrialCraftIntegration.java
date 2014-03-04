@@ -29,7 +29,7 @@ public class IndustrialCraftIntegration
     
     public static void postInit()
     {
-        System.out.println("[GemsCraft] IndustrialCraft module loaded!");
+        System.out.println("[GemsCraft] IC2-Beta module loaded!");
         
         topazDust = new ItemGemDust(GCProperties.dustTopazID - 256).setUnlocalizedName("gc_dustTopaz");
         blackDiamondDust = new ItemGemDust(GCProperties.dustBlackDiamondID - 256).setUnlocalizedName("gc_dustBlackDiamond");
@@ -39,15 +39,15 @@ public class IndustrialCraftIntegration
         MultiLanguageRegistry.addObjectNames(blackDiamondDust, "Black Diamond Dust", "Schwarzer Diamant-Staub");
         
         try
-        {
-            Class.forName("ic2.api.recipe.IMachineRecipeManager");
+        { //TODO - CANT BE ASKED DOING IC2 MODULE AT THE MOMENT
+            /*Class.forName("ic2.api.recipe.IMachineRecipeManager");
             IMachineRecipeManager<ItemStack> maceratorRecipes = (IMachineRecipeManager<ItemStack>)Class.forName("ic2.api.recipe.Recipes").getField("macerator").get(null);
             maceratorRecipes.addRecipe(new ItemStack(GCProperties.itemAmethystID, 1, 0), new ItemStack(GCProperties.dustAmethystID, 1, 0));
             maceratorRecipes.addRecipe(new ItemStack(GCProperties.itemTopazID, 1, 0), new ItemStack(GCProperties.dustTopazID, 1, 0));
             maceratorRecipes.addRecipe(new ItemStack(GCProperties.itemBlackDiamondID, 1, 0), new ItemStack(GCProperties.dustBlackDiamondID, 1, 0));
             maceratorRecipes.addRecipe(new ItemStack(GCBlocks.blockGemOre, 1, 0), new ItemStack(GCProperties.dustAmethystID, 2, 0));
             maceratorRecipes.addRecipe(new ItemStack(GCBlocks.blockGemOre, 1, 4), new ItemStack(GCProperties.dustTopazID, 2, 0));
-            maceratorRecipes.addRecipe(new ItemStack(GCBlocks.blockGemOre, 1, 6), new ItemStack(GCProperties.dustBlackDiamondID, 2, 0));
+            maceratorRecipes.addRecipe(new ItemStack(GCBlocks.blockGemOre, 1, 6), new ItemStack(GCProperties.dustBlackDiamondID, 2, 0));*/
         }
         catch(Exception e) {}
     }
